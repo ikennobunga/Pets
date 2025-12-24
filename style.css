@@ -1,0 +1,185 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  text-decoration: none;
+  box-sizing: border-box;
+  vertical-align: baseline;
+}
+
+:root {
+  --white: #e1d8cd;
+  --hover: #f44336;
+  --black: #001D34;
+  --black-heading: #1d213e;
+  --single-shadow: 0 1rem 1rem rgba(0, 0, 0, .06);
+  --shadow: 
+  0 1.25rem 1.875rem -.9375rem rgba(0, 0, 0, .5),
+  0 2.5rem 2.5rem -1.25rem rgba(0, 0, 0, .1),
+  0 4.375rem 3.125rem -1.875rem rgba(0, 0, 0, .2),
+  0 2.5rem 3.75rem -.3125rem rgba(12.69, .88, 2.5,.3);
+
+  --primary: 'poppins';
+  --secondary: 'Krona One', sans-serif;
+
+  --scroll: smooth;
+
+  --font-weight: 600;
+
+  --max-width: 600px;
+
+  --border: 1px solid rgba(255, 255, 255, 0.24);
+}
+
+ /* Make images easier to work with */
+ img,
+ picture {
+   max-width: 100%;
+   display: block;
+ }
+
+body {
+  animation: opening 1s ease-in-out;
+  -webkit-animation: opening 1s ease-in-out;
+  scroll-behavior: var(--scroll);
+  font-family: var(--primary);
+  min-height: 100vh;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+}
+
+.main-section-wrapper {
+  background-color: var(--black);
+  overflow: hidden;
+}
+
+.main {
+  color: #ffffff;
+  /* max-width: 1066px; */
+  margin: 0 auto; 
+  padding: 40px;
+  position: relative;
+}
+
+/* TODO: Add max-width 1066 to @media for large screens */
+
+h1 { 
+  font-size: 100px;
+  font-family: var(--secondary);
+  line-height: 1;
+}
+
+p { font-size: 16px; }
+
+/* btn */
+.btn {
+  display: inline-block;
+  background-color: var(--hover);
+  color: var(--white);
+  padding: 12px 24px;
+  border-radius: 4px;
+  font-size: 16px;
+  font-weight: 600;
+  transition: 0.3s ease;
+}
+
+.btn-outline {
+  background-color: transparent;
+  border: 2px solid var(--hover);
+  color: var(--hover);
+}
+
+.btn-red {
+  border: 2px solid var(--hover);
+}
+
+.btn:hover {
+  background-color: var(--white);
+  color: var(--black);
+  border: 0px;
+}
+/* End btn */
+
+/* Utilities */
+.utility-mr {
+  margin-right: 10px;
+}
+
+.utility-padding-bottom {
+  padding-bottom: 20px;
+}
+
+.utility-width {
+  max-width: var(--max-width);
+}
+
+.utility-font-weight {
+  font-weight: var(--font-weight);
+}
+/* End of Utilities */
+
+.h1-width {
+  max-width: 800px;
+  padding-top: 100px;
+  z-index: 5;
+  position: relative;
+}
+
+.p1 {
+  font-size: 20px;
+  font-style: italic;
+  margin-top: 20px;
+}
+
+.intro-btn {
+  margin-bottom: 130px;
+}
+
+.intro-feature {
+  padding-top: 20px;
+  border: var(--border);
+  padding: 33px 25px;
+}
+
+.intro-feature h2 {
+  font-size: 20px;
+  margin: 30px 0 6px 0;
+}
+
+.intro-features {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  column-gap: 16px;
+}
+
+.circle {
+  width: 617px;
+  height: 617px;
+  background-color: #A14FCE;
+  opacity: .85;
+  border-radius: 50%;
+  filter: blur(250px);
+  position: absolute;
+  top: 62px;
+  right: -390px;
+}
+
+.circle-two {
+  width: 617px;
+  height: 617px;
+  background-color: #6079ff;
+  opacity: .85;
+  border-radius: 50%;
+  filter: blur(250px);
+  position: absolute;
+  top: -390px;
+  right: 600px;
+}
+
+@media screen and (min-width: 2066px) {
+  .main {
+    max-width: 1066px;
+  }
+}
