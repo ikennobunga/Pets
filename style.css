@@ -125,6 +125,7 @@ p { font-size: 16px; }
   padding-top: 100px;
   z-index: 5;
   position: relative;
+  color: orange;
 }
 
 .p1 {
@@ -137,10 +138,20 @@ p { font-size: 16px; }
   margin-bottom: 130px;
 }
 
+.intro-features {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  column-gap: 16px;
+  z-index: 5;
+  position: relative;
+  color: var(--black);
+}
+
 .intro-feature {
   padding-top: 20px;
   border: var(--border);
   padding: 33px 25px;
+  background-color: orange;
 }
 
 .intro-feature h2 {
@@ -148,11 +159,6 @@ p { font-size: 16px; }
   margin: 30px 0 6px 0;
 }
 
-.intro-features {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  column-gap: 16px;
-}
 
 .circle {
   width: 617px;
